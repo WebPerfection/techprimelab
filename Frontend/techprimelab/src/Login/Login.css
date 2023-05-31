@@ -1,0 +1,127 @@
+.login-container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; */
+  }
+  .login-container h4 {
+    color: white;
+    white-space: nowrap;
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo-container img {
+    height: 100px;
+    width: 100px;
+    margin-bottom: -15px;
+    /* add any additional styling for your logo */
+  }
+  
+  .form-container {
+    width: 22rem;
+    /* adjust width to fit your form content */
+  }
+  form *{
+    color:#868383
+  }
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  form>span {
+    text-align: start;
+    width: 100%;
+    padding: 5px;
+    margin-left: 1px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: -5px;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    position: relative; /* Add this line */
+  }
+  
+  .login-container .password-toggle {
+    position: absolute;
+    transform: translateY(-105%);
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  .password-input-container,
+  .Username-input-container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    opacity: 0.5;
+  }
+  
+  .login-container button {
+    width: 50%;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background-color: rgb(4, 115, 215);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  .forgot-password{
+    display: flex;
+    justify-content:flex-end;
+  }
+  .red-link {
+    color:rgb(4, 115, 215);
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-align: right; /* Align text to the right */
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .form-container {
+      width: 18rem;
+    }
+    
+    form h3, h4, h5, h2 {
+      font-size: 1.2rem;
+    }
+    .logo-container img {
+        height: 90px;
+        width: 90px;
+        /* add any additional styling for your logo */
+      }
+  }
+  
+  .login-container {
+    background-image: url(../Icons/login-bg-1.svg);
+    background-repeat: no-repeat;
+    margin-top: -70px;
+    padding: 5rem;
+  }
+  
