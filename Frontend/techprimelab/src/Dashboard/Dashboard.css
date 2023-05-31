@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    background: rgb(36, 34, 34);
+    flex-direction: column;
+    justify-items: end;
+    width: fit-content;
+    height: 100vh;
+    position: fixed;
+    padding: 20px;
+  }
+  
+  
+  

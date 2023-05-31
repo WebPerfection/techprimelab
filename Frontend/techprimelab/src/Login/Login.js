@@ -28,12 +28,13 @@ const Login = () => {
             setPasswordError(true);
         } else {
             setPasswordError(false);
+            axios.post("http://localhost:8080/login", payload)
+            .then((res) => navigate("/dashboard"))
+            .catch(err => console.log(err))
         }
         e.preventDefault()
 
-        axios.post("http://localhost:8080/login", payload)
-            .then((res) => navigate("/dashboard"))
-            .catch(err => console.log(err))
+        
     }
     const toggleShowPassword = () => {
         setShowPassword(!showPassword);
