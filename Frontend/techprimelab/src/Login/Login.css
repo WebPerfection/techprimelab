@@ -122,6 +122,8 @@
     background-image: url(../Icons/login-bg-1.svg);
     background-repeat: no-repeat;
     margin-top: -70px;
+    background-size: cover;
+    background-position-y: -300px;
     padding: 5rem;
   }
   
