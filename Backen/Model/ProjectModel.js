@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 
 const projectSchema = mongoose.Schema({
-  userID: { type: String, required: true },
   project_theme: { type: String, required: true },
   reason: { type: String, required: true },
   type: { type: String, required: true },
@@ -17,7 +16,6 @@ const projectSchema = mongoose.Schema({
 
 // Add text indexes to the fields for text search
 projectSchema.index({
-  userID: 'text',
   project_theme: 'text',
   reason: 'text',
   type: 'text',
