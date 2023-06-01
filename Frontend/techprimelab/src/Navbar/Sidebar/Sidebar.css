@@ -1,3 +1,8 @@
+@media (max-width: 450px) {
+  .header .Header_logo > h2 {
+    font-size: 0.9rem;
+  }
+}
 .Main_container {
   display: flex;
   flex-direction: row;
@@ -70,89 +75,13 @@
 }
 .Logo {
   width: 15%;
-
 }
 .Nav_background_img {
   width: 100%;
   position: fixed;
   z-index: 0;
 }
-
-@media (max-width: 450px) {
-  .header .Header_logo > h2 {
-    font-size: 0.9rem;
-
-  }
-}
-
-.content form {
-  margin: auto;
-  padding: 20px;
-  /* width: 100%; */
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
-  background-color: white;
-}
-.content form label {
-  display: flex;
-  flex-direction: column;
-  font-weight: 400;
-}
-.content form label select,
-.content form input[type="date"] {
-  margin-top: 5px;
-}
-
-.content form input,
-.content form select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-.content form input[type="date"] {
-  width: 92%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-.input_parent {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.project-theme {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.project-theme > div:first-child {
-  width: 70%;
-}
-.save-button > button {
-  padding: 15px 40px;
-  background-color: rgb(4, 78, 146);
-  color: white;
-  border-radius: 30px;
-  border: none;
-  cursor: pointer;
-}
-.content .ProjectTheme {
-  padding-bottom: 30px;
-}
-.input_parent > div {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-}
-.input_parent > div > div {
-  width: 30%;
-  margin-top: 30px;
-}
-.content{
+.content {
   background-color: white;
   width: 82%;
   height: 95%;
@@ -160,11 +89,13 @@
   transform: translate(2%, 22%);
   z-index: 10;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
-.ContentParent{
+
+/* .ContentParent{
   
-}
+} */
 /* @media (max-width: 530px) {
   .content_render{
     transform: translate(2%, 10%);
