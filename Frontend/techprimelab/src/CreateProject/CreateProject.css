@@ -12,9 +12,9 @@
 .mobile .Form_parent form {
   margin-top: -7%;
 }
-.Form_parent{
+/* .Form_parent{
   z-index: -99;
-}
+} */
 .Form_parent form label {
   display: flex;
   flex-direction: column;
@@ -78,7 +78,7 @@
 }
 .mobile .input_parent > div {
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
   flex-direction: column;
 }
 .mobile .input_parent {
@@ -90,10 +90,10 @@
 
 .mobile .Form_parent form {
   position: relative;
-  z-index: -99;
+  /* z-index: -99; */
 }
 .mobile .project-theme > div:first-child {
-  width: 90%;
+  width: 100%;
   display: flex;
   margin: auto;
 }
@@ -104,4 +104,16 @@
 }
 .mobile .Form_parent .ProjectTheme {
   padding: 10px;
+  padding-bottom: 1.5625rem;
+}
+.mobile .save-button.mobile>button{
+  margin: auto;
+  margin-top: 15px;
+  width: 100%;
+}
+.mobile .save-button {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

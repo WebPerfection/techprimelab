@@ -27,6 +27,7 @@
   background: white;
   bottom: 0;
   border-radius: 40px 40px 0 0;
+  z-index: 99;
 }
 .mobile .sidebar-icons {
   display: flex;
