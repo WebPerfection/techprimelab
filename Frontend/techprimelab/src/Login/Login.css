@@ -156,7 +156,7 @@ form > span {
     width: 100%;
   }
   .container {
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .login-container form {
     border: none;
@@ -164,6 +164,7 @@ form > span {
     background-color: transparent;
     width: 90%;
     margin: auto;
+    margin-top: 10%;
     margin-bottom: -5%;
   }
   .login-container button {
