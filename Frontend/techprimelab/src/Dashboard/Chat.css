@@ -46,8 +46,9 @@
   
   .apexcharts-canvas {
     max-width: 100%;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
   }
-  
   /* Responsive CSS */
   @media screen and (max-width: 768px) {
     .project {

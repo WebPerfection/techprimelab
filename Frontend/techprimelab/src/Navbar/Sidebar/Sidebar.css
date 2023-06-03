@@ -84,7 +84,7 @@
 .content {
   background-color: white;
   width: 82%;
-  height: 95%;
+  height: 80%;
   position: absolute;
   transform: translate(2%, 22%);
   z-index: 10;

@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import "./CreateProject.css"
 function CreateProject() {
+    const getCurrentDate = () => {
+        const currentDate = new Date();
+        const year = currentDate.getFullYear();
+        let month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+        let day = currentDate.getDate().toString().padStart(2, '0');
+        return `${year}-${month}-${day}`;
+    };
     const [project, setProject] = useState({
         theme: '',
         reason: '',
@@ -103,13 +110,30 @@ function CreateProject() {
                     <div>
                         <label>
                             Start Date as per Project Plan
-                            <input type="date" name="startDate" value={project.startDate} onChange={handleInputChange} required />
+                            <input
+                                type="date"
+                                name="startDate"
+                                value={project.startDate}
+                                min={getCurrentDate()} // Set the minimum value of the start date to the current date
+                                max={project.endDate} // Set the maximum value of the start date to the end date
+                                onChange={handleInputChange}
+                                required
+                            />
                         </label>
                     </div>
                     <div>
                         <label>
                             End Date as per Project Plan
-                            <input type="date" id="endDate" name="endDate" value={project.endDate} onChange={handleInputChange} disabled required />
+                            <input
+                                type="date"
+                                id="endDate"
+                                name="endDate"
+                                value={project.endDate}
+                                min={project.startDate} // Set the minimum value of the end date to the start date
+                                onChange={handleInputChange}
+                                disabled={!project.startDate}
+                                required
+                            />
                         </label>
                     </div>
                     <div>
