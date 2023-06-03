@@ -56,7 +56,7 @@ const BarChart = () => {
     };
   
     return (
-      <div style={{padding:"20px"}}>
+      <div className="Project_parent" style={{padding:"20px"}}>
         {/* Display other project data */}
         
         <div className="project">

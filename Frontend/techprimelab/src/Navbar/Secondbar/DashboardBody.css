@@ -9,9 +9,14 @@
   background: white;
   /* Additional styles for the sidebar */
 }
-.ContentArea{
-  margin: 20% 0;
-  padding: 20px;
+.ContentArea {
+  margin: 20% 0 15%;
+  /* padding: 20px; */
+  z-index: 99;
+  position: relative;
+}
+.mobile .ContentArea {
+  z-index: 1;
 }
 
 .body {
@@ -39,23 +44,30 @@
 .mobile .body {
   width: 100%;
   overflow: auto;
+  z-index: 1;
 }
 .mobile .Logo_bar {
   width: 70%;
   margin-top: 15%;
   position: fixed;
+  z-index: 99;
 }
-
+.Logo_bar {
+  z-index: 99;
+}
 .DashboardNav {
   display: flex;
   align-items: center;
+}
+.mobile .DashboardNav {
+  z-index: 999;
 }
 
 .background_img {
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: -1;
+  z-index: 99;
 }
 .background_img > img {
   width: 100%;
@@ -70,14 +82,14 @@
   width: 70%;
   margin-top: 2%;
 }
-.mobile .Logo_bar >img{
+.mobile .Logo_bar > img {
   width: 3.125rem;
 }
 .mobile .DashboardNav {
   margin-top: 3%;
 }
 @media (max-width: 520px) {
-  .mobile .Logo_bar >img{
+  .mobile .Logo_bar > img {
     width: 2.5rem;
     margin-top: -0.9375rem;
   }

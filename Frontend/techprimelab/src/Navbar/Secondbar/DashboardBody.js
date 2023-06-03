@@ -11,6 +11,7 @@ import Project_list from '../../Icons/Project-list.svg';
 import Project_list_active from '../../Icons/Project-list-active.svg';
 import ExitIcon from '../../Icons/Logout.svg';
 import CreateProject from '../../CreateProject/CreateProject';
+import BarChart from '../../Dashboard/Chat';
 const DashboardBody = () => {
     const [isMobile, setIsMobile] = useState(false);
 
@@ -71,7 +72,8 @@ const DashboardBody = () => {
                 </nav>
                 {/* Body content goes here */}
                 <div className='ContentArea'>
-                    <CreateProject />
+                    {/* <CreateProject /> */}
+                    <BarChart/> 
                 </div>
             </div>
         </div>
