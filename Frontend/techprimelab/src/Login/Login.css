@@ -101,8 +101,8 @@ form > span {
 .forgot-password {
   width: 100%;
   display: flex;
-  justify-content:end;
-  
+  justify-content: end;
+
   margin-top: -15px;
 }
 
@@ -119,7 +119,7 @@ form > span {
   text-align: start;
   margin-top: -20px;
 }
-.error-text-password{
+.error-text-password {
   color: red;
   font-size: 0.8rem;
   text-align: start;
@@ -140,5 +140,49 @@ form > span {
   .logo-container img {
     height: 90px;
     width: 90px;
+  }
+}
+@media (max-width: 450px) {
+  .login-container {
+    background-image: url(../Icons/login-bg-2.png);
+    margin-top: -42px;
+    padding: 0;
+    background-position-y: 0;
+  }
+  .logo-container {
+    margin-top: 50%;
+  }
+  .form-container {
+    width: 100%;
+  }
+  .container {
+    justify-content: space-between;
+  }
+  .login-container form {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    width: 90%;
+    margin: auto;
+    margin-bottom: -5%;
+  }
+  .login-container button {
+    width: 100%;
+  }
+  .form-container h3 {
+    width: 100%;
+    text-align: start;
+  }
+}
+@media (max-width: 375px) {
+  .form-container h3 {
+    width: 100%;
+    text-align: start;
+  }
+  .login-container h4 {
+    font-size: 1rem;
+  }
+  .login-container form {
+    margin-bottom: 5%;
   }
 }
