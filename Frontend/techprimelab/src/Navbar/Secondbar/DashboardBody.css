@@ -9,6 +9,10 @@
   background: white;
   /* Additional styles for the sidebar */
 }
+.ContentArea{
+  margin: 20% 0;
+  padding: 20px;
+}
 
 .body {
   width: 85%;
@@ -33,10 +37,12 @@
 
 .mobile .body {
   width: 100%;
+  overflow: auto;
 }
 .mobile .Logo_bar {
   width: 70%;
-  margin-top: 0;
+  margin-top: 15%;
+  position: fixed;
 }
 
 .DashboardNav {
@@ -57,7 +63,6 @@
 .Logo_bar {
   display: flex;
   align-items: center;
-  height: 100%;
   color: white;
   flex-direction: row;
   justify-content: space-around;

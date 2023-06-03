@@ -10,6 +10,7 @@ import Create_Project_active from '../../Icons/create-project-active.svg';
 import Project_list from '../../Icons/Project-list.svg';
 import Project_list_active from '../../Icons/Project-list-active.svg';
 import ExitIcon from '../../Icons/Logout.svg';
+import CreateProject from '../../CreateProject/CreateProject';
 const DashboardBody = () => {
     const [isMobile, setIsMobile] = useState(false);
 
@@ -37,24 +38,24 @@ const DashboardBody = () => {
             <div className={`sidebar ${isMobile ? 'mobile' : ''}`}>
                 {/* Sidebar content goes here */}
                 <div className="sidebar-icons">
-          <div className={`sidebar-icon ${activeIcon === 'dashboard' ? 'active' : ''}`} onClick={() => handleIconClick('dashboard')}>
-            {/* Dashboard */}
-            <img src={activeIcon === 'dashboard' ? Dashboard_active : Dashboard} alt="Dashboard" />
-          </div>
-          <div className={`sidebar-icon ${activeIcon === 'project_list' ? 'active' : ''}`} onClick={() => handleIconClick('project_list')}>
-            {/* Project List */}
-            <img src={activeIcon === 'project_list' ? Project_list_active : Project_list} alt="Project List" />
-          </div>
-          <div className={`sidebar-icon ${activeIcon === 'create_project' ? 'active' : ''}`} onClick={() => handleIconClick('create_project')}>
-            {/*  Create Project*/}
-            <img src={activeIcon === 'create_project' ? Create_Project_active : Create_Project} alt="Create Project" />
-          </div>
-          <div className="sidebar-exit-icon">
-            {/* Exit Icon */}
-            <img src={ExitIcon} alt="Exit" />
-          </div>
+                    <div className={`sidebar-icon ${activeIcon === 'dashboard' ? 'active' : ''}`} onClick={() => handleIconClick('dashboard')}>
+                        {/* Dashboard */}
+                        <img src={activeIcon === 'dashboard' ? Dashboard_active : Dashboard} alt="Dashboard" />
+                    </div>
+                    <div className={`sidebar-icon ${activeIcon === 'project_list' ? 'active' : ''}`} onClick={() => handleIconClick('project_list')}>
+                        {/* Project List */}
+                        <img src={activeIcon === 'project_list' ? Project_list_active : Project_list} alt="Project List" />
+                    </div>
+                    <div className={`sidebar-icon ${activeIcon === 'create_project' ? 'active' : ''}`} onClick={() => handleIconClick('create_project')}>
+                        {/*  Create Project*/}
+                        <img src={activeIcon === 'create_project' ? Create_Project_active : Create_Project} alt="Create Project" />
+                    </div>
+                    <div className="sidebar-exit-icon">
+                        {/* Exit Icon */}
+                        <img src={ExitIcon} alt="Exit" />
+                    </div>
 
-        </div>
+                </div>
             </div>
             <div className={`body ${isMobile ? 'mobile' : ''}`}>
                 <nav className='DashboardNav'>
@@ -69,6 +70,9 @@ const DashboardBody = () => {
 
                 </nav>
                 {/* Body content goes here */}
+                <div className='ContentArea'>
+                    <CreateProject />
+                </div>
             </div>
         </div>
     );
