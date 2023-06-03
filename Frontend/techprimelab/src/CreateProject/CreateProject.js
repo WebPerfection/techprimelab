@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-// import './formStyles.css';
-
+import "./CreateProject.css"
 function CreateProject() {
     const [project, setProject] = useState({
         theme: '',

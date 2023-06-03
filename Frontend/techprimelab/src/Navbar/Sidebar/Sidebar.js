@@ -7,13 +7,14 @@ import Project_list from '../../Icons/Project-list.svg';
 import Project_list_active from '../../Icons/Project-list-active.svg';
 import ExitIcon from '../../Icons/Logout.svg';
 import logo from '../../Icons/Logo.svg';
+import {Routes,Route, useNavigate, Navigate} from "react-router-dom"
 import './Sidebar.css'; //CSS file for styling
 import Header from '../../Icons//Header-bg.svg';
 import CreateProject from '../../CreateProject/CreateProject';
+import BarChart from '../../Dashboard/Chat';
 
 const Sidebar = () => {
   const [activeIcon, setActiveIcon] = useState("dashboard");
-
   const handleIconClick = (icon) => {
     setActiveIcon(icon);
   };
@@ -58,7 +59,12 @@ const Sidebar = () => {
           </div>
         </div>
         <div className='content'>
-          <CreateProject />
+          
+        <Routes>
+            <Route path={activeIcon==="dashboard" ? "/" :"null"} element={<BarChart />} />
+            <Route path={activeIcon=="create_project"?"/":"null"} element={<CreateProject />} />
+          </Routes>
+          
         </div>
 
       </div>

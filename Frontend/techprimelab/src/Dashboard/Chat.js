@@ -56,7 +56,7 @@ const BarChart = () => {
     };
   
     return (
-      <div>
+      <div style={{padding:"20px"}}>
         {/* Display other project data */}
         
         <div className="project">
@@ -89,6 +89,7 @@ const BarChart = () => {
           series={chartData.series}
           type="bar"
           width="50%"
+          className="chart-card"
         />
       </div>
     );
