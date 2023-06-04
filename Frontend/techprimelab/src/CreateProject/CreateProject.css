@@ -8,9 +8,11 @@
   box-shadow: rgba(13, 69, 255, 0.35) 0px 5px 15px;
   background-color: white;
   margin-top: -20%;
+  padding-bottom: 10%;
 }
 .mobile .Form_parent form {
   margin-top: -7%;
+  padding-bottom: 5%;
 }
 /* .Form_parent{
   z-index: -99;
