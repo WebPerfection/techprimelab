@@ -164,7 +164,7 @@ const BarChart = () => {
           options={chartData.options}
           series={chartData.series}
           type="bar"
-          width={isMobile ? "100%" : "85%"}
+          width={isMobile ? "100%" : "75%"}
           className="chart-card"
         />
       </div>
