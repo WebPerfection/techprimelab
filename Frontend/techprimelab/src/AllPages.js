@@ -9,8 +9,8 @@ export default function AllPages() {
   return (
     <Routes>
         <Route path='/' element={<Login/>} ></Route>
-        <Route path='/dashboard' element={<Sidebar/>} ></Route>
-        <Route path='/DashboardBody' element={<DashboardBody/>} ></Route>
+        {/* <Route path='/dashboard' element={<Sidebar/>} ></Route> */}
+        <Route path='/dashboard' element={<DashboardBody/>} ></Route>
     </Routes>
   )
 }

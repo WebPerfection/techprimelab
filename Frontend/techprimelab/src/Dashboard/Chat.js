@@ -96,13 +96,17 @@ const chartData = {
 
       <h3>Department wise - Total Vs Closed</h3>
       {/* Render the chart */}
-      <Chart
-        options={chartData.options}
-        series={chartData.series}
-        type="bar"
-        width="40%"
-        className="chart-card"
-      />
+      <div className="chart-container">
+  <Chart
+    options={chartData.options}
+    series={chartData.series}
+    type="bar"
+    
+    // width="50%"
+    className="chart-card"
+  />
+</div>
+      
     </div>
   );
 };

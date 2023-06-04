@@ -12,6 +12,8 @@ import Project_list_active from '../../Icons/Project-list-active.svg';
 import ExitIcon from '../../Icons/Logout.svg';
 import CreateProject from '../../CreateProject/CreateProject';
 import BarChart from '../../Dashboard/Chat';
+
+import {Routes,Route, useNavigate, Navigate} from "react-router-dom"
 const DashboardBody = () => {
     const [isMobile, setIsMobile] = useState(false);
 
@@ -73,7 +75,11 @@ const DashboardBody = () => {
                 {/* Body content goes here */}
                 <div className='ContentArea'>
                     {/* <CreateProject /> */}
-                    <BarChart/> 
+                    {/* <BarChart/>  */}
+                    <Routes>
+            <Route path={activeIcon==="dashboard" ? "/" :"null"} element={<BarChart />} />
+            <Route path={activeIcon==="create_project"?"/":"null"} element={<CreateProject />} />
+          </Routes>
                 </div>
             </div>
         </div>

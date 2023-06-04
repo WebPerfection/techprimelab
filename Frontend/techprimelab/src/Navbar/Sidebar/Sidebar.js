@@ -62,7 +62,7 @@ const Sidebar = () => {
           
         <Routes>
             <Route path={activeIcon==="dashboard" ? "/" :"null"} element={<BarChart />} />
-            <Route path={activeIcon=="create_project"?"/":"null"} element={<CreateProject />} />
+            <Route path={activeIcon==="create_project"?"/":"null"} element={<CreateProject />} />
           </Routes>
           
         </div>

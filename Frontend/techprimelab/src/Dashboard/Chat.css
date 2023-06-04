@@ -60,7 +60,9 @@
     box-shadow: rgba(13, 69, 255, 0.35) 0px 5px 15px;
 
   }
-  /* Responsive CSS */
+  .chart-card {
+    width: 50%;
+  }
   @media screen and (max-width: 768px) {
     .project {
       flex-wrap: wrap;
@@ -73,6 +75,9 @@
     .closure,
     .cancelled {
       flex-basis: 100%;
+    }
+    .chart-card {
+      width: 100%;
     }
   }
   
