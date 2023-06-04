@@ -102,7 +102,7 @@ const chartData = {
     series={chartData.series}
     type="bar"
     
-    // width="50%"
+    width={window.innerWidth <= 600 ? "100%" : "85%"}
     className="chart-card"
   />
 </div>
